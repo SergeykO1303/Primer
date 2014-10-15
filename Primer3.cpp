@@ -1,14 +1,16 @@
 #include <iostream>
-#include <locale>
 using namespace std;
 int main() 
 {
 	setlocale (LC_ALL, "rus");
-	char str[12];
-	cout << " Как тебя зовут?";
+	int R,S,S2;
+	cout << "Введите радиус круга";
 	cout << endl;
-	cin >>  str;
-	cout <<"Привет, меня зовут "  << str << endl;
+	cin >>  R;
+	
+//	S=pow(R,2)*3.14;
+	S2=R*R*3.14;
+	cout <<"площадь=" <<S2 << endl;
 	system ("pause");
 	return 0;
 }
